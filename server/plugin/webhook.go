@@ -1787,7 +1787,7 @@ func (p *Plugin) postDiscussionCommentEvent(event *github.DiscussionCommentEvent
 		post.AddProp(postPropGithubRepo, repoName)
 		post.AddProp(postPropGithubObjectID, commentID)
 		post.AddProp(postPropGithubObjectType, githubObjectTypeDiscussionComment)
-
+// this is a webhook file test ssrf or other bugs
 		post.ChannelId = sub.ChannelID
 		if err = p.client.Post.CreatePost(post); err != nil {
 			p.client.Log.Warn("Error creating discussion comment post", "channel_id", post.ChannelId, "error", err.Error())

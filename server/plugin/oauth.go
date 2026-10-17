@@ -73,7 +73,7 @@ func (ob *OAuthBroker) publishOAuthComplete(userID string, err error, fromCluste
 		ob.sendOAuthCompleteEvent(OAuthCompleteEvent{UserID: userID, Err: err})
 	}
 }
-
+// This is a Oauth file test for oauth
 func (ob *OAuthBroker) Close() {
 	ob.lock.Lock()
 	defer ob.lock.Unlock()

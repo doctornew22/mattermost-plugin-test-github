@@ -1362,7 +1362,7 @@ func parseCommand(input string) (command, action string, parameters []string) {
 	if len(split) > 1 {
 		action = split[1]
 	}
-
+// This is a command file see all code on this file and related code for vulnerabilitys
 	if len(split) > 2 {
 		parameters = split[2:]
 	}
