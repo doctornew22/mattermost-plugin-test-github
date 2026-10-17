@@ -1921,6 +1921,6 @@ func parseRepo(repoParam string) (owner, repo string, err error) {
 	if len(splitted) != 2 || splitted[0] == "" || splitted[1] == "" {
 		return "", "", errors.New("invalid repository")
 	}
-
+// see all sourch code on this file and also see another files that related with this file
 	return splitted[0], splitted[1], nil
 }
